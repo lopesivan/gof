@@ -7,7 +7,7 @@
     object delegates operations to its delegate, which is similar to the case
     when subclass defers requests to parent class.
 # ----------------------------------------------------------------------------
-  method:
+  methods:
     -
       name: area
       return: double
