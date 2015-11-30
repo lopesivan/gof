@@ -17,7 +17,7 @@
   director:
     -
       name: "CaixaMcDonalds"
-      method: "enviaPedidoPara"
+      construct: "enviaPedidoPara"
 
   builder:
     -
@@ -35,8 +35,11 @@
 
   products:
     -
-      abstract: ""
-      methods:
+      abstract:
+        -
+          name:
+          attributes:
+          methods:
       concrete:
         -
           name: "refeicao"
@@ -50,3 +53,4 @@
             - setSanduiche
             - setSalada
             - setSobremesa
+

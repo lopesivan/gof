@@ -15,28 +15,34 @@
     object composition, as object creation is implemented in methods exposed
     in the factory interface.
 
+  mode: 1
+
   types:
     - qt
     - motif
 
   factory:
     -
-      abstract: "widget"
-      get:      "obterFactory"
+      abstract:
+        -
+          name: "widget"
+          method: "obterFactory"
 
   products:
     -
-      abstract: "Janela"
-      methods:
-        - void desenhar1()
-        - void desenhar2()
-        - void desenhar3()
-    -
-      abstract: "Botao"
-      methods:
-        - void desenhar4()
-        - void desenhar5()
-        - void desenhar6()
-        - void desenhar7()
-        - void desenhar8()
+      abstract:
+        -
+          name: "Janela"
+          methods:
+            - void desenhar1()
+            - void desenhar2()
+            - void desenhar3()
+        -
+          name: "Botao"
+          methods:
+            - void desenhar4()
+            - void desenhar5()
+            - void desenhar6()
+            - void desenhar7()
+            - void desenhar8()
 

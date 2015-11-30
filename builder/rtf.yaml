@@ -17,7 +17,7 @@
   director:
     -
       name: "leitorRTF"
-      method: "lerRTF"
+      construct: "lerRTF"
 
   builder:
     -
@@ -43,10 +43,14 @@
 
   products:
     -
-      abstract: ""
-      methods:
-      concrete:
+      abstract:
         -
-          name: ""
+          name:
           attributes:
           methods:
+      concrete:
+        -
+          name:
+          attributes:
+          methods:
+

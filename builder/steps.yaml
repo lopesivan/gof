@@ -17,7 +17,7 @@
   director:
     -
       name: "director"
-      method: "construct"
+      construct: "construct"
 
   builder:
     -
@@ -32,14 +32,17 @@
         -
           name: "ConcreteBuilder"
           getResult: "doIt"
-          create: ""
+          create:
 
   products:
     -
-      abstract: ""
-      methods:
+      abstract:
+        -
+          name:
+          attributes:
+          methods:
       concrete:
         -
-          name: ""
+          name:
           attributes:
           methods:

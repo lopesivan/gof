@@ -17,7 +17,7 @@
   director:
     -
       name: "Pizzaiolo"
-      method: "juntaOsIngredientesColocaNoForno"
+      construct: "juntaOsIngredientesColocaNoForno"
 
   builder:
     -
@@ -41,10 +41,13 @@
           getResult: "tiraDoForno"
           create: "Pizza"
 
-  products:
+    products:
     -
-      abstract: ""
-      methods:
+      abstract:
+        -
+          name:
+          attributes:
+          methods:
       concrete:
         -
           name: "Pizza"
@@ -56,3 +59,4 @@
             - setMassa
             - setMolho
             - setCobertura
+

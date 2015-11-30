@@ -1,7 +1,7 @@
 ---
-  project: "Pet shop"
-  language: "python"
-  gof: "Abstract Factory"
+  project: "Carro"
+  language: "java"
+  gof: "AbstractFactory"
   description: >
     The abstract factory pattern provides a way to encapsulate a group of
     individual factories that have a common theme without specifying their
@@ -14,28 +14,44 @@
     implementation of a set of objects from their general usage and relies on
     object composition, as object creation is implemented in methods exposed
     in the factory interface.
-# ----------------------------------------------------------------------------
-  mode: 2
+
+  mode: 1
 
   types:
-    - Cat
-    - Dog
-    - Rabbit
-    - Bird
+    - popular
+    - sedan
+    - esporte
 
   factory:
     -
       abstract:
         -
-          name: "Pet"
+          name: "Carro"
           method: "obterFactory"
 
   products:
     -
       abstract:
         -
-          name: "Pet"
+          name: "Fiat"
           methods:
-            - speak(self)
-            - __str__(self)
+            - void desenhar1()
+            - void desenhar2()
+            - void desenhar3()
+        -
+          name: "Ford"
+          methods:
+            - void desenhar4()
+            - void desenhar5()
+            - void desenhar6()
+            - void desenhar7()
+            - void desenhar8()
+        -
+          name: "volkswagen"
+          methods:
+            - void desenhar4()
+            - void desenhar5()
+            - void desenhar6()
+            - void desenhar7()
+            - void desenhar8()
 
