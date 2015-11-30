@@ -1,6 +1,7 @@
 ---
   project: "exemplo de delegação"
   language: "cpp"
+  gof: "delegation"
   description: >
     Delegation makes composition as powerful for reuse as inheritance. With
     delegation, two objects are involved in handling a request. A receiving

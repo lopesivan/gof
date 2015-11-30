@@ -1,7 +1,7 @@
 ---
-  project: "Widget"
-  language: "java"
-
+  project: "Pet shop"
+  language: "python"
+  gof: "AbstractFactory"
   description: >
     The abstract factory pattern provides a way to encapsulate a group of
     individual factories that have a common theme without specifying their
@@ -16,27 +16,20 @@
     in the factory interface.
 
   types:
-    - qt
-    - motif
+    - Cat
+    - Dog
+    - rabit
+    - bird
 
   factory:
     -
-      abstract: "widget"
+      abstract: "Pet"
       get:      "obterFactory"
 
   products:
     -
-      abstract: "Janela"
+      abstract: "Pet"
       methods:
-        - void desenhar1()
-        - void desenhar2()
-        - void desenhar3()
-    -
-      abstract: "Botao"
-      methods:
-        - void desenhar4()
-        - void desenhar5()
-        - void desenhar6()
-        - void desenhar7()
-        - void desenhar8()
+        - speak(self)
+        - __str__(self)
 
