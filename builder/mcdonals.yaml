@@ -46,7 +46,7 @@
             - salada
             - sobremesa
           methods:
-            - pegaBebida
-            - pegaSanduiche
-            - pegaSalada
-            - pegaSobremesa
+            - setBebida
+            - setSanduiche
+            - setSalada
+            - setSobremesa
