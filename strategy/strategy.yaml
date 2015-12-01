@@ -17,6 +17,7 @@
   context:
     -
       name: "contexto"
+      execute: "ssss"
       method: "double sin(doube n)"
 
   strategy:
