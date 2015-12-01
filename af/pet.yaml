@@ -15,7 +15,6 @@
     object composition, as object creation is implemented in methods exposed
     in the factory interface.
 # ----------------------------------------------------------------------------
-  mode: 2
 
   types:
     - Cat
@@ -27,15 +26,28 @@
     -
       abstract:
         -
-          name: "Pet"
-          method: "obterFactory"
+          name: Pet
+          attributes:
+          methods:
+            - obterPet
+
+      concrete:
+        -
+          name:
+          attributes:
+          methods:
 
   products:
     -
       abstract:
         -
-          name: "Pet"
+          name: Pet
+          attributes:
           methods:
             - speak(self)
             - __str__(self)
-
+      concrete:
+        -
+          name:
+          attributes:
+          methods:

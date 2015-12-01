@@ -15,7 +15,6 @@
     object composition, as object creation is implemented in methods exposed
     in the factory interface.
 
-  mode: 1
 
   types:
     - popular

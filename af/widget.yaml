@@ -15,8 +15,6 @@
     object composition, as object creation is implemented in methods exposed
     in the factory interface.
 
-  mode: 1
-
   types:
     - qt
     - motif
@@ -33,16 +31,23 @@
       abstract:
         -
           name: "Janela"
+          attributes:
           methods:
             - void desenhar1()
             - void desenhar2()
             - void desenhar3()
         -
           name: "Botao"
+          attributes:
           methods:
             - void desenhar4()
             - void desenhar5()
             - void desenhar6()
             - void desenhar7()
             - void desenhar8()
-
+        -
+      concrete:
+        -
+          name:
+          attributes:
+          methods:

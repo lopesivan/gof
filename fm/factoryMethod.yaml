@@ -1,7 +1,7 @@
 ---
-  project: "Perfume"
+  project: "Widget"
   language: "java"
-  gof: "AbstractFactory"
+  gof: "Factory Method"
   description: >
     The abstract factory pattern provides a way to encapsulate a group of
     individual factories that have a common theme without specifying their
@@ -15,40 +15,37 @@
     object composition, as object creation is implemented in methods exposed
     in the factory interface.
 
+  mode: 1
 
   types:
-    - Masculino
-    - Feminino
+    - qt
+    - motif
 
-  factory:
+  creator:
     -
       abstract:
         -
-          name: "perfume"
-          method: "obterFactory"
+          name: "widget"
+          factoryMethod:
+            -
+              name: "factoryMethod"
+              produto: "ProductName"
+      concrete:
+        -
+          name:
+          attributes:
+          methods:
 
   products:
     -
       abstract:
         -
-          name: "Boticario"
+          name:
+          attributes:
           methods:
-            - void desenhar1()
-            - void desenhar2()
-            - void desenhar3()
+      concrete:
         -
-          name: "Jequiti"
+          name:
+          attributes:
           methods:
-            - void desenhar4()
-            - void desenhar5()
-            - void desenhar6()
-            - void desenhar7()
-            - void desenhar8()
-        -
-          name: "Adidas"
-          methods:
-            - void desenhar4()
-            - void desenhar5()
-            - void desenhar6()
-            - void desenhar7()
-            - void desenhar8()
+

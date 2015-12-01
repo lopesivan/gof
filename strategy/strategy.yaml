@@ -1,7 +1,7 @@
 ---
-  project: "Etapas"
+  project: "Exemplo de strategy"
   language: "java"
-  gof: "builder"
+  gof: "strategy"
   description: >
     The builder pattern is an object creation software design pattern. Unlike
     the abstract factory pattern and the factory method pattern whose
@@ -14,29 +14,12 @@
     parameter step by step and then returns the resulting constructed object
     at once.
 
-  director:
+  context:
     -
-      name: "director"
-      construct: "construct"
+      name: "contexto"
+      method: "double sin(doube n)"
 
-  builder:
-    -
-      name: "Builder"
-      attributes:
-      parts: # etapas de construção
-        - part1
-        - part2
-        - part3
-        - part4
-
-      concrete:
-        -
-          name: "ConcreteBuilder"
-          attributes:
-          getResult: "doIt"
-          create:
-
-  products:
+  strategy:
     -
       abstract:
         -
