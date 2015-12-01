@@ -34,6 +34,7 @@
           name:
           attributes:
           methods:
+          create:
 
   products:
     -
